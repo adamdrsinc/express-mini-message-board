@@ -1,0 +1,12 @@
+<div class="messages">
+    <h1><%= title%></h1>
+    <a href="./new">New Message</a>
+    <%for(const message of messages){ %>
+    <div class="message">
+        <h1><%= message.name%></h1>
+        <p><%= message.message%></p>
+        <p><i><%= message.added %></i></p>
+        <a href="/message/<%= message.id%>">Open</a>
+    </div>
+    <%} %>
+</div>
